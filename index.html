@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSEXAME</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="./arrowFonctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tableau propriétées</h1>
+    </header>
+    <div class="container">
+        <p>Bouger la souris sur les flèches cela permet également de faire bouger les valeurs </p>
+        <table border="">
+            <tr>
+                <th>Propriétés</td>
+                <th>Input</td>
+                <th>Valeurs</td>
+            </tr>
+            <tr>
+                <td>couleur de fond (rgb)</td>
+                <td><span id="arleftbc" class="arrowleft"><</span><input type="range" min="0" max="255" step=5 name='color' id="bc" value="0"><span id="arrightbc" class="arrowright">></span></td>
+                <td><span id="valueOfBc">0</span></td>
+                <td rowspan="6" width="400" align="center"><h1 id="t1">Titre de test</h1></td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td><span id="arleftp" class="arrowleft"><</span><input type="range" name="padding" id="pad" min="0" max="30" step=1 value="0"><span id="arrightp" class="arrowright">></span></td>
+                <td><span id="valueOfP">0</span></td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td><span id="arlefth" class="arrowleft"><</span><input type="range" min="0" max="200" name="height" id="h" step=5 value="0"><span id="arrighth" class="arrowright">></span></td>
+                <td><span id="valueOfH">0</span></td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td><span id="arleftw" class="arrowleft"><</span><input type="range" min="0" max="200" name="width" id="w" step=5 value="0"><span id="arrightw" class="arrowright">></span></td>
+                <td><span id="valueOfW">0</span></td>
+            </tr>
+            <tr>
+                <td>arrondi</td>
+                <td><span id="arlefta" class="arrowleft"><</span><input type="range" min="0" max="50" name="radius" id="rad" step=1 value="0"><span id="arrighta" class="arrowright">></span></td>
+                <td><span id="valueOfA">0</span></td>
+            </tr>
+            <tr>
+                <td>rotation</td>
+                <td><span id="arleftr" class="arrowleft"><</span><input type="range" min="0" max="180" name="rotation" id="rot" step=5 value="0"><span id="arrightr" class="arrowright">></span></td>
+                <td><span id="valueOfR">0</span></td>
+            </tr>
+        </table>
+        <button type="reset" id="btnR">Reset</button>
+    </div>
+    
+</body>
+</html>
